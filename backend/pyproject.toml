@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = ["Arisa PLoyprapt <arisa.p.123@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.95.1"
+uvicorn = "^0.21.1"
+sqlmodel = "^0.0.8"
+sqlalchemy = "1.4.41"
+asyncpg = "^0.27.0"
+psycopg2 = "^2.9.6"
+pydantic = "^1.10.7"
+alembic = "^1.10.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+start= "app.main:start"
