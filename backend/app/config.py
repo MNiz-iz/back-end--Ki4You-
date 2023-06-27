@@ -3,7 +3,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlmodel import SQLModel
 import os
 
-
+#config your database
 DB_USER = os.getenv("DB_USER", "postgres")
 DB_PASSWORD = os.getenv("DB_PASSWORD", "Zuzk2o5geMdqSqUH0rRe")
 DB_NAME = os.getenv("DB_NAME", "railway")

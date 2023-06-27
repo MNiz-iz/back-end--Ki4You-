@@ -25,6 +25,7 @@ def init_app():
 
     app.add_middleware(
         CORSMiddleware,
+        #url for allow crosite
         allow_origins=["http://127.0.0.1:5500"],
         allow_credentials=True,
         allow_methods=["*"],
@@ -46,5 +47,6 @@ def init_app():
 app = init_app()
 
 
-
-
+def start():
+    #url for start api
+    uvicorn.run("app.main:app", host="localhost", port=8888, reload=True)

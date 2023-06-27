@@ -5,8 +5,8 @@ from app.distance_similarity_asym import distance_asymmetric_binary, sort_rankin
 
 async def recommend_flower(input_fromUser):
     #recommend flower
-    flower_matrix = pd.read_csv('backend/app/data_files/data_matrix/flower_matrix.csv')
-    distance_flower = pd.read_csv('../app/data_files/data_matrix/distance_flower.csv')
+    flower_matrix = pd.read_csv('C:/Users/mina/Desktop/Ki4You/backend/app/data_files/data_matrix/flower_matrix.csv')
+    distance_flower = pd.read_csv('C:/Users/mina/Desktop/Ki4You/backend/app/data_files/data_matrix/distance_flower.csv')
 
     dist = []
 
