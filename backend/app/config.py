@@ -4,12 +4,11 @@ from sqlmodel import SQLModel
 import os
 
 #config your database
-DB_USER = os.getenv("DB_USER", "postgres")
-DB_PASSWORD = os.getenv("DB_PASSWORD", "Zuzk2o5geMdqSqUH0rRe")
-DB_NAME = os.getenv("DB_NAME", "railway")
-DB_HOST = os.getenv("DB_HOST", "containers-us-west-149.railway.app")
-DB_POST = os.getenv("DB_HOST", "5468")
-DB_CONFIG = f"postgresql+asyncpg://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_POST}/{DB_NAME}"
+DB_USER = os.getenv("DB_USER", "default")
+DB_PASSWORD = os.getenv("DB_PASSWORD", "9kViT4vGCrPa")
+DB_NAME = os.getenv("DB_NAME", "verceldb")
+DB_HOST = os.getenv("DB_HOST", "ep-late-hat-19016131-pooler.ap-southeast-1.postgres.vercel-storage.com")
+DB_CONFIG = f"postgresql+asyncpg://{DB_USER}:{DB_PASSWORD}@{DB_HOST}/{DB_NAME}"
 
 
 class AsyncDatabaseSession:
